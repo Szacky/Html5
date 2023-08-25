@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="css/style1.css">
+		<title>登录</title>
+
+ <style>
+ 		#background {
+    		background-image: url(image.jpg);
+    		background-position: center;
+    		background-repeat: no-repeat, repeat;
+    		padding: 5px;
+			background-size:1536px 864px;
+		}
+ 		        *{
+            margin:0;
+            padding:0;
+        }
+        html,body{
+            width:100%;
+            height:100%;
+            background:#040d32;
+        }
+
+        p {font-size:2.5em;} /* 40px/16=2.5em */
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        .border-box{
+            position: relative;
+            margin:300px auto;
+            width:400px;
+            height:300px;
+            background: rgba(1, 19, 67, 0.8);
+            border: 2px solid #00a1ff;
+            border-radius: 8px;
+        }
+        .border-box::before {
+            position: absolute;
+            top: -2px;
+            bottom: -2px;
+            left: 30px;
+            width: calc(100% - 60px);
+            content: "";
+            border-top: 2px solid #016886;
+            border-bottom: 2px solid #016886;
+            z-index: 0;
+        }
+        .border-box::after {
+            position: absolute;
+            top: 30px;
+            right: -2px;
+            left: -2px;
+            height: calc(100% - 60px);
+            content: "";
+            border-right: 2px solid #016886;
+            border-left: 2px solid #016886;
+            z-index: 0;
+        }
+        .border-box p{
+            line-height:100px;
+            text-align: center;
+            color:#00a1ff;
+        }
+		#picture {
+			display: inline-block;
+    		border-radius: 4px;
+    		padding: 5px;
+    		transition: 0.3s;
+        	background-position:800px 25px;
+		}
+
+    </style>
+
+</head>
+<div id = "background">
+<body>
+<div class="border-box">
+    <p>404 NOT FOUND</p>
+
+</div>
+<div class="container">
+
+    <form method="post" action="/register">  
+      <input type="text" placeholder="请输入账号" name="name"/><br/>
+      <input type="password" placeholder="请输入密码"name="password"/><br/>   
+      <input type="submit" value="登入" />
+        <span class="left"></span>
+        <span class="right"></span>
+    	<span class="top"></span> 
+    	<span class="bottom"></span>
+       
+    </form>
+
+</div>
+</div>
+
+
+</body>
+</html>
